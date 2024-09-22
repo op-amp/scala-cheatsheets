@@ -1,3 +1,8 @@
+This repo is a custom fork of
+[https://github.com/yoeo/scala-explained](https://github.com/yoeo/scala-explained).
+
+---
+
 # Scala explained
 
 Scala is a programming language that let you write **cool stuff** like:
@@ -23,8 +28,12 @@ Scala programming tools:
 
 ## Setup Scala environment
 
-- **Install Scala** from the official website:
-  [https://www.scala-lang.org/download/](https://www.scala-lang.org/download/)
+- For most cases **JVM** (usually provided by JDK) must be
+  pre-installed in order to run Scala codes.
+
+- When Java is ready,
+  **install Scala** from the official website:
+  [https://www.scala-lang.org/download/](https://www.scala-lang.org/download/).
 
 - Verify the installation by checking **Scala version** with the command:
   ```bash
@@ -56,9 +65,6 @@ Scala programming tools:
   scala HelloWorld
   # --> Hello, world!
   ```
-
-- Note that for most cases **JVM** (usually provided by JDK) must be
-  pre-installed in order to run Scala codes.
 
 - You can also use **Scala REPL**, an interactive command-line environment
   for evaluating and executing small code snippets.
