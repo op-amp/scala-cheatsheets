@@ -23,27 +23,45 @@ Scala programming tools:
 
 ## Setup Scala environment
 
-1. **Install Scala** from the official website:
+- **Install Scala** from the official website:
   [https://www.scala-lang.org/download/](https://www.scala-lang.org/download/)
 
-1. Create a **Scala source code file** named `MyScalaProgram.scala`
+- Verify the installation by checking **Scala version** with the command:
+  ```bash
+  scala -version
+  # --> Scala code runner version 2.12.19 -- Copyright 2002-2024, LAMP/EPFL and Lightbend, Inc.
+  ```
+
+- Create a **Scala source code file** named `HelloWorld.scala`
   with the following content:
 
   ```scala
-  object MyScalaProgram {
+  // aligning the main class with the file name is not compulsory but recommended
+  object HelloWorld {
     // the `main` method is the program entry point
     def main(args: Array[String]): Unit =
-      println("I was here.")
+      println("Hello, world!")
   }
   ```
 
-1. Compile and run your **Scala program** using your favorite Scala environment
+- Compile and run your **Scala program** using your favorite Scala environment
   (IntelliJ, sbt) or through a terminal:
 
   ```bash
-  scala MyScalaProgram.scala
-  # --> I was here.
+  scala HelloWorld.scala
+  # --> Hello, world!
+
+  # or alternatively
+  scalac HelloWorld.scala
+  scala HelloWorld
+  # --> Hello, world!
   ```
+
+- Note that for most cases **JVM** (usually provided by JDK) must be
+  pre-installed in order to run Scala codes.
+
+- You can also use **Scala REPL**, an interactive command-line environment
+  for evaluating and executing small code snippets.
 
 ## Start!
 
